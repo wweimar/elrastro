@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elrastro</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+
+  <div class="container">
+    <div class="barranav">
+    <!-- Navigation -->
+    <nav class="nav-main">
+      <!-- Brand -->
+      <img src="pies3.png" alt="Pasos" class="nav-brand">
+      <!-- Left Nav -->
+      <ul class="nav-menu">
+        <li>
+          <a href="#"><h1 class="menuletrasinicio">Biografia</h1></p></a>
+        </li>
+        <li>
+          <a href="#"><h1 class="menuletrasinicio">Trayectoria</h1></a>
+        </li>
+        <li>
+          <a href="#"><h1 class="menuletrasinicio">Proyectos</h1></a>
+        </li>
+        <li>
+          <a href="#"><h1 class="menuletrasinicio">Referentes</h1></a>
+        </li>
+        <li>
+          <a href="#"><h1 class="menuletrasinicio">Más</h1></a>
+        </li>
+      </ul>
+
+      <!-- Right Nav -->
+      <ul class="nav-menu-right">
+        <li>
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+    <!-- SHOWCASE -->
+    <header class="showcase">
+      <div class="container2 mt-5 mb-5">
+        <div class="letrasypies">
+         <div class="piesimagen">
+          <img src="pies4.png" alt=""
+            width="110"
+            height="110">
+         </div>
+            <h1 class="wt">EL Rastro...</h1>
+          </div>
+        </div>
+        <div class="cuento">
+          <p class="escrito"> De pequeño cuado vivía en el campo y se perdia o se robaban el ganado de la casa, 
+            los adultos decian que para encontrarlo habia que segir <a href="https://ginzo.tech/que-es-rastro-digital-como-borrarlo/" target="_blank">"El Rastro"</a> </p>
+        </div>
+
+    </header>
+
+    <!-- NEWS CARDS -->
+    <div class="news-cards">
+      <div class="fondocuadros">
+        <img src="perro y niño.gif" alt="" />
+        <h1 class="titulocuadro">Paso del tiempo.</h1>
+        <p  class="letrascuadro">Ilustración tomda de un dibujo rápido en bolígrafo, donde un chico esta viendo una película con su perro en Parque de los Deseos, Medellín Colombia...
+        </p>
+        <a href="#">Más <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div class="fondocuadros">
+        <img src="capilla.jpg" alt="" />
+        <h1 class="titulocuadro">Memorias en el espacio.</h1>
+        <p class="letrascuadro">Intervención en "La Capilla" un espacio dentro de la Universidad Nacional de Colombia, que en algún momento era un lugar para realizar encuentros de Música, pintura, converstorios, etc... pero a la fecha 2024, es un puesto de comidas.
+        </p>
+        <a href="#">Más <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div class="fondocuadros">
+        <img src="mascara.jpg" alt="" />
+        <h1 class="titulocuadro">Patrimonio.</h1>
+        <p class="letrascuadro">Esta es una "máscara", que fue realizada por un colectivo de artesanos de la ciudad de Medellín, e intervenida por un grafitero y una muralista, la intención de este trabajo es ver como las tradiciones, costumbres, saberes, celebraciones, etc. De un determinado lugar se extienden y dejan rastro en alguna forma. 
+        </p>
+        <a href="#">Más <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div class="fondocuadros">
+        <img src="tallerniños.jpg" alt="" />
+        <h1 class="titulocuadro">Talleres Andantes.</h1>
+        <p class="letrascuadro">Son diversas actividades que se realizan con cualquier tipo de personas, donde se explora los sentires y los saberes para después ser plasmados en alguna materialidad.
+        </p>
+        <a href="#">Más <i class="fas fa-angle-double-right"></i></a>
+      </div>
+    </div>
+
+<!---div que le pertenece a la seccion de comentarios-->
+
+<div class="cajadecomentarios">
+
+
+
+    <!-- Card Banner 1-->
+<section class="cards-banner-one">
+      <div class="content">
+        <h2 class="titulocuadro">Comentarios y Sujerencias.</h2>
+        <!-- lorem 20 -->
+        <p class="letrascuadro">Será un gran aprte si deseas comentar algo con respecto a la informacón en general, agradecido de ante mano y todo es para mejorar.</p>
+        <!-- Sección de comentarios -->
+<section id="comentarios">
+  
+<!--este es codigo para comentarios que se queden pegados a la página web pero hay que aprender a usar 
+un progrma para almacenar datos-->
+
+
+<!-- Formulario para agregar comentarios -->
+<form id="formulario-comentario">
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" required><br>
+  <label for="comentario">Comentario:</label><br>
+  <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br>
+  <button type="submit">Enviar Comentario</button>
+</form>
+
+<!-- Lista de comentarios -->
+<div id="lista-comentarios"></div>
+
+<!-- Configuración de Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+<script>
+  // Configuración de Firebase (reemplaza con tu propia configuración)
+  const firebaseConfig = {
+    apiKey: "TU_API_KEY",
+    authDomain: "TU_DOMINIO.firebaseapp.com",
+    databaseURL: "https://TU_DOMINIO.firebaseio.com",
+    projectId: "TU_PROYECTO_ID",
+    storageBucket: "TU_DOMINIO.appspot.com",
+    messagingSenderId: "TU_MENSAJERO_ID",
+    appId: "TU_APP_ID"
+  };
+
+  // Inicializar Firebase
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+
+  // Función para agregar un comentario a Firebase
+  function agregarComentario(event) {
+    event.preventDefault(); // Prevenir el envío del formulario
+    
+    // Obtener los valores del formulario
+    var nombre = document.getElementById('nombre').value;
+    var comentario = document.getElementById('comentario').value;
+    
+    // Guardar el comentario en Firebase
+    database.ref('comentarios').push({
+      nombre: nombre,
+      comentario: comentario
+    });
+    
+    // Limpiar el formulario
+    document.getElementById('formulario-comentario').reset();
+  }
+  
+  // Agregar un evento de escucha al formulario para agregar comentarios
+  document.getElementById('formulario-comentario').addEventListener('submit', agregarComentario);
+
+  // Mostrar los comentarios almacenados en Firebase
+  database.ref('comentarios').on('child_added', function(snapshot) {
+    var comentario = snapshot.val();
+    var nuevoComentario = document.createElement('div');
+    nuevoComentario.classList.add('comentario');
+    nuevoComentario.innerHTML = '<strong>' + comentario.nombre + '</strong>: ' + comentario.comentario;
+    document.getElementById('lista-comentarios').appendChild(nuevoComentario);
+  });
+</script>
+</div>
+</div>
+
+
+   
+ <!-- Follow -->
+    <section class="social">
+      <p class="letrascuadro">Redes Sociales.</p>
+      <div class="links">
+        <a href="https://www.facebook.com/weimar.perez.3/">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/weimarivanperez/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/3105150492">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.youtube.com/@weimarperez4854">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3 >El Rastro...(Weimar Pérez artesano)</h3>
+  </footer>
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
