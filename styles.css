@@ -6,18 +6,26 @@
   }
 .wt {
   color: aqua;
+
   text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
-  font-size: 80px;
-  
+  font-size:80px; 
 }
+
 .cuento {
   padding-bottom: 200px;
   margin-left: 100px;
   margin-right: 80px;
 }
 
+.piesimagen {
+  opacity: 0.2;
+  margin-top: 0%;
+}
+
 .menuletrasinicio {
-  font-size: 30px;
+  font-size: 40px;
+  color: #fff;
+
 }
 .escrito {
   color:aqua;
@@ -52,21 +60,11 @@
   }
   
   .container {
-    margin-left: 2%;
     width: 90%;
-    padding: 2%;
-    text-align: right;
-    height: 500px;
-    background-color: #000000;
-    margin-top: 0px;
+    margin: auto;
+  
+  }
 
-  }
-  .container2 {
-    margin-left: 0%;
-    width: 90%;
-    padding: 0%;
-    height: 500px; 
-  }
   
   /* Navigation */
   .nav-main {
@@ -75,13 +73,12 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    padding: 10px 0;
+    padding: 40px 0;
   }
   
 
   .nav-brand {
-      
-    padding: 10px 0;
+    width: 60px;
   }
   
   /* Navbar Left */
@@ -151,7 +148,6 @@
     margin-bottom: 20px;
     color:#fff;
   }
-
 
 
   
