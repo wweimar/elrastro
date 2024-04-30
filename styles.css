@@ -6,7 +6,6 @@
   }
 .wt {
   color: aqua;
-  
   text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
   font-size: 80px;
   
@@ -15,11 +14,6 @@
   padding-bottom: 200px;
   margin-left: 100px;
   margin-right: 80px;
-}
-
-.piesimagen {
-  opacity: 0.2;
-  margin-top: 0%;
 }
 
 .menuletrasinicio {
