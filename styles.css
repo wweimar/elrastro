@@ -75,19 +75,12 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    padding: 20px 0;
+    padding: 40px 0;
   }
   
-.letrasypies {
-  display: flex;
-  text-align: left;
-  margin-left: 100px;
-  margin-top: 0%;
-
-}
 
   .nav-brand {
-    width: 50px;
+    width: 60px;
   }
   
   /* Navbar Left */
