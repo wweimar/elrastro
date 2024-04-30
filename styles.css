@@ -17,7 +17,7 @@
 }
 
 .menuletrasinicio {
-  font-size: 40px;
+  font-size: 30px;
 }
 .escrito {
   color:aqua;
@@ -75,7 +75,7 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    padding: 40px 0;
+    padding: 20px 0;
   }
   
 
